@@ -1,0 +1,101 @@
+{
+  "name": "AlgoPredict",
+  "desc": "",
+  "methods": [
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "addPrediction",
+      "args": [
+        {
+          "name": "question",
+          "type": "string"
+        },
+        {
+          "name": "option1Name",
+          "type": "string"
+        },
+        {
+          "name": "option2Name",
+          "type": "string"
+        },
+        {
+          "name": "startsAt",
+          "type": "uint64"
+        },
+        {
+          "name": "endsAt",
+          "type": "uint64"
+        },
+        {
+          "name": "category",
+          "type": "string"
+        },
+        {
+          "name": "image",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "uint64"
+      }
+    },
+    {
+      "name": "buyShares",
+      "args": [
+        {
+          "name": "predictionId",
+          "type": "uint64"
+        },
+        {
+          "name": "option",
+          "type": "uint8"
+        },
+        {
+          "name": "amount",
+          "type": "uint64"
+        },
+        {
+          "name": "payTxn",
+          "type": "pay"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "endPrediction",
+      "args": [
+        {
+          "name": "predictionId",
+          "type": "uint64"
+        },
+        {
+          "name": "result",
+          "type": "uint8"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "claimReward",
+      "args": [
+        {
+          "name": "predictionId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}
